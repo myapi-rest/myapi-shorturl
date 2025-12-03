@@ -30,16 +30,13 @@ Generate a new short URL.
 }
 ```
 
-  -----------------------------------------------------------------------
-  Field              Type            Required        Description
-  ------------------ --------------- --------------- --------------------
-  long_url           string          Yes             The target URL to
-                                                     shorten.
+### Request Body Fields
 
-  expires_at         string          No              Optional ISO 8601
-                                                     UTC expiry
-                                                     timestamp.
-  -----------------------------------------------------------------------
+| Field       | Type   | Required | Description                              |
+|-------------|--------|----------|------------------------------------------|
+| long_url    | string | Yes      | The target URL to shorten.               |
+| expires_at  | string | No       | Optional ISO 8601 UTC expiry timestamp.  |
+
 
 ### Response (200 OK)
 
