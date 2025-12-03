@@ -16,18 +16,29 @@ You can contribute by:
 
 ## Issues
 
-- Use the **Bug report** or **Feature request** templates when opening issues.
-- Include the endpoint, sample request/response, and any relevant context.
+When opening an issue, please include:
+
+- The endpoint you are referring to
+- A sample request and response (if applicable)
+- A clear description of the problem or question
+- Any additional context that helps us understand the situation
+
+This helps us respond faster and more accurately.
+
 
 ## Pull Requests
 
-1. Fork the repository.
-2. Create a branch for your changes.
-3. Keep changes focused and small where possible.
-4. Update or add examples/docs as needed.
-5. Open a PR and briefly describe what you changed and why.
+Pull requests for improvements to documentation, examples, or Postman collections are welcome.
 
-We aim to review contributions as time allows.
+If you’d like to contribute:
+
+1. Fork the repository  
+2. Create a small, focused branch  
+3. Make your edits (docs, examples, or minor fixes)  
+4. Open a PR with a short description of the change
+
+We review contributions as time allows.
+
 
 ## Code of Conduct
 
