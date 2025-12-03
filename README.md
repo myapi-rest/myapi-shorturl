@@ -17,3 +17,9 @@ curl --location 'https://api.myapi.rest/api/shorturl/generate' \
     "long_url": "https://jenturner.studio",
     "expires_at": "2026-11-15T10:01:57.102Z"
   }'
+```
+```bash
+Sample response:
+{
+  "shorturl": "https://grc.pw/Z7hye8b"
+}
