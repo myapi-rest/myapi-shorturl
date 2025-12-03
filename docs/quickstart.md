@@ -11,18 +11,6 @@ This guide shows how to generate your first short URL using
 2.  Create or copy an existing API key.
 3.  Store it securely (e.g. as an environment variable).
 
-Example (Linux/macOS):
-
-``` bash
-export MYAPI_API_KEY="YOUR_API_KEY_HERE"
-```
-
-Example (Windows PowerShell):
-
-``` powershell
-$env:MYAPI_API_KEY = "YOUR_API_KEY_HERE"
-```
-
 ------------------------------------------------------------------------
 
 ## 2. Create a short URL with curl
@@ -53,9 +41,6 @@ in:
 -   JavaScript (Node)
 -   Python
 -   PHP
-
-Each example reads your API key from the `MYAPI_API_KEY` environment
-variable and prints the API response.
 
 ------------------------------------------------------------------------
 
