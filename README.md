@@ -23,3 +23,5 @@ Sample response:
 {
   "shorturl": "https://grc.pw/Z7hye8b"
 }
+```
+Replace <API_KEY> with your myapi.rest API key from the dashboard.
