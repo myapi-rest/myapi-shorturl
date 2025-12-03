@@ -5,28 +5,45 @@
 
 # myapi.rest — Short URL API
 
-A fast, secure API to generate branded short URLs with optional expiry and click webhooks.  
-This service powers `https://grc.pw` and is part of the **myapi.rest** API suite.
+Create fast, reliable short URLs through a simple REST API.
 
----
+## Features
+- Generate short links instantly  
+- Optional expiry timestamps  
+- Webhook support for click events  
+- Developer-friendly and lightweight  
 
-## 🚀 Quick Start
-
-Generate a short URL from a long URL:
+## Quick Example
 
 ```bash
-curl --location 'https://api.myapi.rest/api/shorturl/generate' \
-  --header 'Content-Type: application/json' \
-  --header 'Authorization: Bearer <API_KEY>' \
-  --data '{
-    "long_url": "https://jenturner.studio",
-    "expires_at": "2026-11-15T10:01:57.102Z"
+curl --location 'https://api.myapi.rest/api/shorturl/generate'   --header 'Authorization: Bearer <API_KEY>'   --header 'Content-Type: application/json'   --data '{
+    "long_url": "https://myapi.rest",
+    "expires_at": "2026-12-01T10:00:00Z"
   }'
 ```
-```bash
-Sample response:
+
+**Sample response:**
+
+```json
 {
   "shorturl": "https://grc.pw/Z7hye8b"
 }
 ```
-Replace <API_KEY> with your myapi.rest API key from the dashboard.
+
+## Documentation
+See the [`/docs`](./docs) folder for full usage guides, examples, errors, and endpoint details.
+
+## Examples
+Language examples are available in the [`/examples`](./examples) directory, including:
+- C#
+- JavaScript
+- Python
+- PHP
+- Postman Collection
+
+## myapi.rest Suite
+
+This API is part of the broader **myapi.rest** developer suite.  
+For all APIs, documentation, and examples, visit:
+
+👉 https://github.com/myapi-rest/myapi.rest
