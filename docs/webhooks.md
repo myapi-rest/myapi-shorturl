@@ -27,16 +27,17 @@ event to your configured endpoint.
 
 ### Field Reference
 
-  Field             Type     Description
-  ----------------- -------- ------------------------------------
-  occurredAt        string   Timestamp of the click.
-  id                string   Event identifier.
-  code              string   The short code clicked.
-  domain            string   Domain that served the short link.
-  ip                string   IP address of the visitor.
-  user_agent        string   User-Agent header.
-  referer           string   Referring page (if any).
-  accept_language   string   Browser language header.
+| Field           | Type   | Description                         |
+|-----------------|--------|-------------------------------------|
+| occurredAt      | string | Timestamp of the click.             |
+| id              | string | Event identifier.                   |
+| code            | string | The short code clicked.             |
+| domain          | string | Domain that served the short link.  |
+| ip              | string | IP address of the visitor.          |
+| user_agent      | string | User-Agent header.                  |
+| referer         | string | Referring page (if any).            |
+| accept_language | string | Browser language header.            |
+
 
 ------------------------------------------------------------------------
 
