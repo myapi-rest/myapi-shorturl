@@ -1,0 +1,66 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "myapi.rest — Short URL API",
+    "version": "1.0.0"
+  },
+  "servers": [
+    { "url": "https://api.myapi.rest" }
+  ],
+  "paths": {
+    "/api/shorturl/generate": {
+      "post": {
+        "summary": "Generate a short URL",
+        "operationId": "generateShortUrl",
+        "security": [
+          { "bearerAuth": [] }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "long_url": { "type": "string", "format": "uri" },
+                  "expires_at": { "type": "string", "format": "date-time" }
+                },
+                "required": ["long_url"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Short URL created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "shorturl": { "type": "string", "format": "uri" }
+                  },
+                  "required": ["shorturl"]
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer"
+      }
+    }
+  }
+}
