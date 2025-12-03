@@ -1,0 +1,42 @@
+name: Bug report description: Report a problem with the myapi.rest Short
+URL API title: "\[Bug\]:" labels: \["bug"\] assignees: \[\]
+
+body: - type: markdown attributes: value: \| Thanks for taking the time
+to submit a bug report!
+
+-   type: input id: endpoint attributes: label: Endpoint description:
+    Affected API endpoint (e.g. POST /api/shorturl/generate)
+    placeholder: POST /api/shorturl/generate validations: required:
+    false
+
+-   type: textarea id: summary attributes: label: Summary description:
+    Clear description of the issue. placeholder: What happened?
+    validations: required: true
+
+-   type: textarea id: request_body attributes: label: Request Body (if
+    applicable) description: JSON sent in the request. render: json
+    validations: required: false
+
+-   type: textarea id: response attributes: label: Response Received
+    description: Paste the full raw API response (including structured
+    error format). render: json validations: required: true
+
+-   type: textarea id: logs attributes: label: Logs / Additional Details
+    description: Steps to reproduce, expected vs actual behavior, and
+    anything else helpful. placeholder: Steps, logs, notes...
+    validations: required: false
+
+-   type: input id: environment_client attributes: label: Client
+    description: curl, Postman, C#, Node, browser, etc. validations:
+    required: false
+
+-   type: input id: environment_os attributes: label: Operating System
+    description: Windows, macOS, Linux validations: required: false
+
+-   type: input id: environment_time attributes: label: Approximate Time
+    description: Timestamp of the issue (optional) validations:
+    required: false
+
+-   type: textarea id: screenshots attributes: label: Screenshots
+    (optional) description: Attach or paste images. validations:
+    required: false
