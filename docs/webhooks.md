@@ -1,9 +1,18 @@
-You can configure a Click Event Webhook URL in your myapi.rest dashboard.
-Whenever a short URL is clicked, we’ll POST a JSON payload to your webhook.
+# Webhooks --- Short URL Click Events
 
-Sample Click Event Webhook Payload:
+When someone clicks one of your short URLs, myapi.rest sends a webhook
+event to your configured endpoint.
 
-```bash
+------------------------------------------------------------------------
+
+## Event: `shorturl.click`
+
+**Method:** `POST`\
+**Content-Type:** `application/json`
+
+### Sample Payload
+
+``` json
 {
   "occurredAt": "2025-12-01 06:11:08",
   "id": "18",
@@ -14,3 +23,28 @@ Sample Click Event Webhook Payload:
   "referer": "",
   "accept_language": "en-ZA,en-GB;q=0.9,en-US;q=0.8,en;q=0.7"
 }
+```
+
+### Field Reference
+
+  Field             Type     Description
+  ----------------- -------- ------------------------------------
+  occurredAt        string   Timestamp of the click.
+  id                string   Event identifier.
+  code              string   The short code clicked.
+  domain            string   Domain that served the short link.
+  ip                string   IP address of the visitor.
+  user_agent        string   User-Agent header.
+  referer           string   Referring page (if any).
+  accept_language   string   Browser language header.
+
+------------------------------------------------------------------------
+
+## Handling Webhooks
+
+-   Respond with **2xx** to confirm receipt.\
+-   Process asynchronously for reliability.\
+-   Log errors for debugging.
+
+A simple webhook handler can store click data, update analytics, or
+trigger downstream workflows.
