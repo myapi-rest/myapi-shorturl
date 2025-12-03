@@ -7,8 +7,13 @@ Error responses typically return JSON with an `error` field.
 
 ``` json
 {
-  "error": "Invalid long_url"
+	"type": "https://tools.ietf.org/html/rfc9110#section-15.6.1",
+	"title": "API Key validation error",
+	"status": 500,
+	"detail": "The API key provided could not be validated",
+	"instance": "/api/shorturl/generate"
 }
+
 ```
 
 ------------------------------------------------------------------------
