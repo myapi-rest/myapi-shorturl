@@ -1,0 +1,30 @@
+{
+    "info": {
+        "name": "myapi.rest \u2014 Short URL API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Generate Short URL",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer <API_KEY>"
+                    },
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "url": "https://api.myapi.rest/api/shorturl/generate",
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"long_url\": \"https://jenturner.studio\",\n    \"expires_at\": \"2026-11-15T10:01:57.102Z\"\n}"
+                }
+            },
+            "response": []
+        }
+    ]
+}
