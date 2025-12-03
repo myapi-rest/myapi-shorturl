@@ -1,11 +1,3 @@
-
----
-
-## 🧪 `examples/` folder
-
-### `examples/csharp/Program.cs`
-
-```csharp
 using System;
 using System.Net.Http;
 using System.Net.Http.Headers;
